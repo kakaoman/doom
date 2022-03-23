@@ -9,7 +9,7 @@ local TextLabel = Instance.new("TextLabel")
 
 --Properties:
 
-ScreenGui.Parent = game.Workspace
+ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 main.Name = "main"
@@ -17,6 +17,8 @@ main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
 main.Position = UDim2.new(0.565152645, 0, 0.522875845, 0)
 main.Size = UDim2.new(0, 547, 0, 273)
+main.Active = true
+main.Draggable = true
 
 label.Name = "label"
 label.Parent = main
