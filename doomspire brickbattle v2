@@ -1,15 +1,15 @@
 
-
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local label = Instance.new("TextLabel")
 local SHadminv1 = Instance.new("TextButton")
 local spinhack = Instance.new("TextButton")
 local TP = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui
+ScreenGui.Parent = game.Workspace
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 main.Name = "main"
@@ -17,15 +17,13 @@ main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
 main.Position = UDim2.new(0.565152645, 0, 0.522875845, 0)
 main.Size = UDim2.new(0, 547, 0, 273)
-main.Active = true
-main.Draggable = true
 
 label.Name = "label"
 label.Parent = main
 label.BackgroundColor3 = Color3.fromRGB(71, 255, 30)
 label.Size = UDim2.new(0, 547, 0, 50)
-label.Font = Enum.Font.SourceSans
-label.Text = "Doomspire admin GUI v1"
+label.Font = Enum.Font.SciFi
+label.Text = "Doomspire brick battle gui v2"
 label.TextColor3 = Color3.fromRGB(0, 0, 194)
 label.TextScaled = true
 label.TextSize = 40.000
@@ -37,7 +35,7 @@ SHadminv1.Parent = main
 SHadminv1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 SHadminv1.Position = UDim2.new(0.0237659961, 0, 0.227106228, 0)
 SHadminv1.Size = UDim2.new(0, 200, 0, 56)
-SHadminv1.Font = Enum.Font.SourceSans
+SHadminv1.Font = Enum.Font.DenkOne
 SHadminv1.Text = "SH admin v1"
 SHadminv1.TextColor3 = Color3.fromRGB(255, 255, 255)
 SHadminv1.TextSize = 20.000
@@ -122,7 +120,7 @@ spinhack.Parent = main
 spinhack.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 spinhack.Position = UDim2.new(0.440585017, 0, 0.227106228, 0)
 spinhack.Size = UDim2.new(0, 200, 0, 56)
-spinhack.Font = Enum.Font.SourceSans
+spinhack.Font = Enum.Font.DenkOne
 spinhack.Text = "spin hack"
 spinhack.TextColor3 = Color3.fromRGB(255, 255, 255)
 spinhack.TextSize = 20.000
@@ -1548,7 +1546,7 @@ TP.Parent = main
 TP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TP.Position = UDim2.new(0.835466206, 0, 0.234432235, 0)
 TP.Size = UDim2.new(0, 78, 0, 50)
-TP.Font = Enum.Font.SourceSans
+TP.Font = Enum.Font.DenkOne
 TP.Text = "TP"
 TP.TextColor3 = Color3.fromRGB(255, 255, 255)
 TP.TextSize = 14.000
@@ -1556,3 +1554,12 @@ TP.MouseButton1Down:connect(function()
 	-- by. 러커 Rucker
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/kakaoman/doom/main/doomspire%20brickbattle2'),true))()
 end)
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Position = UDim2.new(0, 0, 0.853479862, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 40)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "by. 러커 Rucker"
+TextLabel.TextColor3 = Color3.fromRGB(59, 255, 0)
+TextLabel.TextSize = 14.000
